@@ -13,3 +13,4 @@ jobs:
       - name: "Errors I've made"
         run: |
           echo "I've made errors"
+          exit 1
