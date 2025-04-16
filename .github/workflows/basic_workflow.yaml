@@ -9,4 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Things i've done
-        run: echo "T've done things"
+        run: echo "I've done things"
+      - name: "Errors I've made"
+        run: |
+          echo "I've made errors"
+          exit 1
