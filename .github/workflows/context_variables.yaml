@@ -16,3 +16,11 @@ jobs:
         env:
           CONTEXT_ITEM: ${{ toJson(job) }}
         run: echo "Context Item = ${CONTEXT_ITEM}"
+      - name: Dump Runner Information
+        env:
+          CONTEXT_ITEM: ${{ toJson(runner) }}
+        run: echo "${CONTEXT_ITEM}"
+      - name: Dump Step Information
+        env:
+          CONTEXT_ITEM: ${{ toJson(steps) }}
+        run: echo "${CONTEXT_ITEM}"
