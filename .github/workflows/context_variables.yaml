@@ -11,7 +11,7 @@ jobs:
       - name: Dump event info
         env:
           CONTEXT_ITEM: ${{ toJson(github)}}
-        run: echo "Context Item = $CONTEXT_ITEM"
+        run: echo "Context Item = ${CONTEXT_ITEM}"
       - name: dumb Jon info
         env:
           CONTEXT_ITEM: ${{ toJson(job) }}
