@@ -1,0 +1,12 @@
+name: Basic workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  do-things:
+    name: Do things
+    runs-on: ubuntu-latest
+    steps:
+      - name: Things i've done
+        run: echo "T've done things"
